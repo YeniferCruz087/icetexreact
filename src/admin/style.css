@@ -1,0 +1,129 @@
+#navA{
+    
+    height:4cm !important;
+    text-align: center;
+    padding-top: 20px;  
+    background-color: #f2cd60;  
+   
+}
+.nav-link{
+    padding-top:40px ;
+  
+}
+.container-fluid{
+    height: 3cm !important;
+   
+}
+#botonInicio, #btnBuscHome{
+    height: 39px;
+    margin-left: 3px;
+}
+#formInicio{
+    margin-top: 35px;
+}
+#formHome{
+    margin-top: 35px;
+}
+
+#cardInicio{
+   padding-top: 90px;
+}
+
+/*home*/
+#navHome{
+    background-color: #f2cd60;  
+}
+#headerHome{
+    padding: 40px;
+}
+.enviosHome{
+    margin-top: 6px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px !important; 
+  }
+
+.card-img-top{
+    height: 20% !important;
+    height: 200px !important;
+}
+
+/*Carrito*/
+
+#carritoTitulo{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    position: fixed;
+    right: 0px; 
+    padding: 46px; 
+    height: 10%;
+    top: 250px;
+    width: 380px;
+    overflow-y: auto !important;
+    position: fixed;
+    right: 0px;
+    width: 380px;
+    height: 50%;
+    top: 200px;
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: 160px;
+}
+#cardCarrito{
+    margin-top: 90px;
+ 
+
+}
+.item-img{
+    height: 40px !important;
+}
+
+#list{
+    height: 300px;
+    max-height: 300px !important;
+    overflow-y: auto !important;
+}
+/*products*/
+#catalogo{
+    margin: 20px;
+}
+#products{
+    padding-top: 15px;
+}
+#btonComprar{
+    margin-left: 4px;
+}
+
+#metodosPago{
+    padding: 25px;
+    height: 3cm;
+    background-color:whitesmoke;
+}
+
+#tamanoImagen{
+    width: 400px;
+    height: 276px;
+    object-fit: contain;
+    object-position: center;
+}
+#logo{
+    margin-top: -50px;
+}
+#piePagina{
+    height: 2cm;
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+.footer{
+    background-color: rgb(233, 233, 231);
+}
+#footerHome{
+    margin-top: 520px;
+}
