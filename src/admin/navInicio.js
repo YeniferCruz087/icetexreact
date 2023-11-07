@@ -1,5 +1,6 @@
 import "./style.css"
-import React from "react"
+import React from "react";
+import telefonoPNG from "./telefono.png";
 /*import "./navInicio.css"*/
 function NavInicio(props){
     return(
@@ -15,7 +16,7 @@ function NavInicio(props){
                             <a className="nav-link" href="http://localhost:3000/login">Iniciar sesión</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#"><img src="imagenes/telefono.png" alt="" width="20px"/>Contactos</a>
+                            <a className="nav-link" href="#"><img src={telefonoPNG} alt="" width="20px"/>Contactos</a>
                         </li>
                     </ul>
 

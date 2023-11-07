@@ -11,8 +11,7 @@ function Inicio(props){
         <div>
             <MyHeader></MyHeader>
             <NavInicio></NavInicio>
-            <CardProy></CardProy>
-           
+            <CardProy></CardProy> 
             <Footer></Footer>                  
         </div>      
     );

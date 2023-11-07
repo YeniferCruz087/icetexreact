@@ -1,9 +1,10 @@
 
-import React, {useState} from "react";
+import React, { useState} from "react";
 import "./login.css"
 
 
 function Login(){
+
     const [formData,setFormData]= useState({
         email:" ",
         password:" ",
@@ -30,8 +31,9 @@ function Login(){
             },
             body: JSON.stringify(formData),
         });
+        
     };
-    
+
 
     return(
         <div>

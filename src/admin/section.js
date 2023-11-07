@@ -1,9 +1,30 @@
 import "./style.css"
 /*import "./section.css"*/
 
+
+function crearProducto(event){
+    event.preventDefault();
+
+    let producto={
+        nombre: document.getElementById("nombre").value,
+        descripcion: document.getElementById("descripcion").value,
+        precio:document.getElementById("precio").value,
+    };
+
+    fetch("http://localhost:3000/adminProy", {
+        headers: {
+            "Content-Type": "Application/json",
+        },
+        method: "POST",
+        body: JSON.stringify(producto),
+    });
+} 
+
 function Section(props){
+    
     return (
-        <div className="container" id="adm">
+        
+<div className="container" id="adm">
             <div className="row">
                 <div className="col-md-12">
                 <h2>Administrador</h2>
@@ -16,23 +37,13 @@ function Section(props){
             </div>
             <div>
                 <h1>Inventario</h1>
-                <ul>
-                    <li>
-                        <label for="producto1" >Producto A</label>
-                        <input type="number" id="producto1" min="0" value="0"></input>
-                    </li>
-                    <li>
-                        <label for="producto2" >Producto B</label>
-                        <input type="number" id="producto2" min="0" value="0"></input>
-                    </li>
-                    <button id="agregar">Agregar al carrito</button>
-                    <button id="eliminar">Eliminar del carrito</button>
-                    
-
-
-                </ul>
-                
-
+                <form onSubmit="crearProducto(event);" id="formAdmin">
+                    <input type="text"  name="nombre" id="nombre" placeholder="Nombre" />
+                    <textarea  id="descripcion" name="descripcion" placeholder="Description"></textarea>
+                    <input type="number"  name="precio" id="precio" placeholder="precio" />
+                    <input type="submit" value="Crear producto"/>
+                </form>
+                              
             </div>
         </div>
         

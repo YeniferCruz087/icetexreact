@@ -92,6 +92,7 @@
 /*products*/
 #catalogo{
     margin: 20px;
+
 }
 #products{
     padding-top: 15px;
@@ -115,6 +116,13 @@
 #logo{
     margin-top: -50px;
 }
+
+#formAdmin{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+
+}
 #piePagina{
     height: 2cm;
     padding: 10px;
@@ -125,5 +133,6 @@
     background-color: rgb(233, 233, 231);
 }
 #footerHome{
-    margin-top: 520px;
+    margin-top: 0px;
 }
+
